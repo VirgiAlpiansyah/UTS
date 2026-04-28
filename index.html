@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SMK KOMPUTER AL-BASHRY</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 🔥 LOADER -->
+<div id="loader">
+  <div class="spinner"></div>
+</div>
+
+<!-- 🔥 PROGRESS BAR -->
+<div id="progress-bar"></div>
+
+<!-- 🔝 Back To Top -->
+<button id="topBtn">↑</button>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top glass-navbar">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="img/logo.png" class="logo">
+      <span>SMK KOMPUTER AL-BASHRY</span>
+    </a>
+
+    <!-- Toggle -->
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link" href="#keunggulan">Keunggulan</a></li>
+        <li class="nav-item"><a class="nav-link" href="#jurusan">Jurusan</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galeri">Galeri</a></li>
+        <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero d-flex align-items-center text-center text-white">
+  <div class="container">
+    <h1 class="display-5">Selamat Datang di</h1>
+    <h1 class="display-3 fw-bold text-warning">SMK KOMPUTER AL-BASHRY</h1>
+    <p class="lead">Sekolah Unggul, Berprestasi, dan Siap Kerja</p>
+    <a href="#tentang" class="btn btn-custom mt-3">Lihat Profil</a>
+  </div>
+</section>
+
+<!-- Tentang -->
+<section id="tentang" class="container" data-aos="fade-up">
+  <h2 class="text-center">Tentang Sekolah</h2>
+  <p class="text-center">
+    SMK Komputer Al-Bashry merupakan sekolah kejuruan yang berfokus pada
+    pengembangan keterampilan siswa agar siap kerja.
+  </p>
+</section>
+
+<!-- Keunggulan -->
+<section id="keunggulan" class="bg-soft text-center" data-aos="fade-up">
+  <div class="container">
+    <h2>Keunggulan Sekolah</h2>
+    <div class="row mt-4">
+
+      <div class="col-md-4">
+        <div class="card p-4">
+          <i class="fas fa-laptop-code fa-2x text-primary mb-2"></i>
+          <h5>Fasilitas Lengkap</h5>
+          <p>Laboratorium modern dan lengkap.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card p-4">
+          <i class="fas fa-user-graduate fa-2x text-success mb-2"></i>
+          <h5>Guru Berpengalaman</h5>
+          <p>Dibimbing oleh tenaga profesional.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card p-4">
+          <i class="fas fa-briefcase fa-2x text-warning mb-2"></i>
+          <h5>Siap Kerja</h5>
+          <p>Lulusan siap terjun ke dunia kerja.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Jurusan -->
+<section id="jurusan" class="container text-center" data-aos="fade-up">
+  <h2>Jurusan</h2>
+  <div class="row justify-content-center mt-4">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="img/tkj.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5>TKJ</h5>
+          <p>Teknik Komputer dan Jaringan fokus pada jaringan dan hardware.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Galeri -->
+<section id="galeri" class="bg-soft" data-aos="fade-up">
+  <div class="container">
+    <h2 class="text-center">Galeri</h2>
+    <div class="row mt-4 gallery">
+      <div class="col-md-4"><img src="img/galeri.jpg" class="img-fluid mb-3 galeri-img"></div>
+      <div class="col-md-4"><img src="img/foto.jpg" class="img-fluid mb-3 galeri-img"></div>
+      <div class="col-md-4"><img src="img/galeriiii.jpg" class="img-fluid mb-3 galeri-img"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox">
+  <img id="lightbox-img">
+</div>
+
+<!-- Kontak -->
+<section id="kontak" class="container text-center" data-aos="fade-up">
+  <h2>Kontak</h2>
+
+  <div class="row mt-4">
+    <div class="col-md-4">
+      <i class="fas fa-map-marker-alt fa-2x text-primary mb-2"></i>
+      <p>Jl. Palasari No.39, Sukabumi</p>
+    </div>
+    <div class="col-md-4">
+      <i class="fas fa-phone fa-2x text-success mb-2"></i>
+      <p>(0266) 620809</p>
+    </div>
+    <div class="col-md-4">
+      <i class="fas fa-envelope fa-2x text-warning mb-2"></i>
+      <p>smkkomputeralbashry@rocketmail.com</p>
+    </div>
+  </div>
+
+  <div class="mt-4">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.6234175050436!2d106.65373657499545!3d-6.8155742931820615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e682cc1054865a5%3A0xc1610f1d200eb964!2sSMK%20Komputer%20Al-Bashry!5e0!3m2!1sen!2sid!4v1776951427883!5m2!1sen!2sid" 
+      width="100%" height="300" style="border-radius:10px;"></iframe>
+  </div>
+</section>
+
+<!-- Form Kontak (Modul Input Data) -->
+<section class="container text-center mt-5" data-aos="fade-up">
+  <h2>Form Kontak</h2>
+
+  <form id="contactForm" class="mt-4">
+    <div class="mb-3">
+      <input type="text" id="nama" class="form-control" placeholder="Nama" required>
+    </div>
+
+    <div class="mb-3">
+      <input type="email" id="email" class="form-control" placeholder="Email" required>
+    </div>
+
+    <div class="mb-3">
+      <textarea id="pesan" class="form-control" placeholder="Pesan" required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-custom">Kirim</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer class="text-white text-center p-4">
+  <h5>SMK KOMPUTER AL-BASHRY</h5>
+  <p>Sukabumi</p>
+  <p>&copy; 2026</p>
+</footer>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
