@@ -1,0 +1,118 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  padding-top: 70px;
+}
+
+/* NAVBAR GLASS */
+.glass-navbar {
+  background: linear-gradient(
+    rgba(79, 172, 254, 0.7),
+    rgba(67, 233, 123, 0.7)
+  );
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.glass-navbar.scrolled {
+  background: linear-gradient(90deg, #4facfe, #43e97b);
+}
+
+.navbar a {
+  color: white !important;
+}
+
+.logo {
+  width: 35px;
+  margin-right: 10px;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('/img/sekolah.jpg') center/cover no-repeat;
+  height: 400px;
+}
+
+/* BUTTON */
+.btn-custom {
+  background: #ffd93d;
+}
+
+/* SECTION */
+section {
+  padding: 80px 0;
+}
+
+.bg-soft {
+  background: #f8f9fa;
+}
+
+/* CARD */
+.card {
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* GALERI */
+.gallery img {
+  border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+  background: linear-gradient(90deg, #4facfe, #43e97b);
+}
+.nav-link.active {
+  color: #ffd93d !important;
+  font-weight: 600;
+}
+#topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background: #ffd93d;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #ddd;
+  border-top: 5px solid #4facfe;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: #ffd93d;
+  width: 0%;
+  z-index: 9999;
+}
